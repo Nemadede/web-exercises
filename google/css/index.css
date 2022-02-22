@@ -1,0 +1,180 @@
+body {
+  margin: 0px;
+  width: 100%;
+  min-width: 500px;
+  font-weight: normal;
+}
+
+header {
+  margin-top: 10px;
+}
+
+header ul {
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+/* apps icon*/
+
+header ul li.apps a {
+  display: flex;
+}
+
+header ul li.apps div.dot {
+  height: 2px;
+  width: 2px;
+  margin: 1px;
+  padding: 1px;
+  background-color: rgba(33, 23, 43, 0.555);
+}
+
+/* end*/
+
+header ul li div.image {
+  border: 1px solid grey;
+  padding: 5px;
+  border-radius: 50%;
+  margin-right: 20px;
+}
+
+header ul li a {
+  display: block;
+  text-decoration: none;
+  color: black;
+  padding: 5px;
+  font-size: 15px;
+  margin: 2px;
+}
+
+header ul li a:hover {
+  text-decoration: underline;
+}
+
+div.body {
+  width: 800px;
+  margin: 130px auto 50px auto;
+}
+
+div.body img.google {
+  height: 90px;
+  display: block;
+  margin: 10px auto;
+}
+
+div.body form.form {
+  text-align: center;
+  display: block;
+}
+
+div.body form.form input#insert {
+  padding: 14px 10px;
+  border: 1px solid rgba(189, 183, 183, 0.555);
+  width: 500px;
+  margin: 15px 0px 0px 10px;
+  border-radius: 30px;
+  outline: none;
+  background-image: url(../img/Google_mic.png);
+  background-size: 15px;
+  background-repeat: no-repeat;
+  background-position: 95% center;
+  /* box-shadow: none; */
+}
+
+div.body form.form input#insert:hover {
+  box-shadow: 1px 1px 1px 1px rgb(219, 217, 217);
+  border: 1px solid rgba(214, 213, 213, 0.2);
+}
+
+div.body form.form div.btn {
+  margin: 25px 3px;
+  margin-top: 40px;
+}
+
+div.body form.form div.btn input[type="submit"] {
+  padding: 8px 10px;
+  border: 1px solid rgba(202, 198, 198, 0.1);
+  border-radius: 5px;
+  background-color: rgba(202, 198, 198, 0.3);
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 15px;
+}
+
+div.body form.form div.btn input[type="submit"]:first-child {
+  margin-right: 10px;
+}
+
+div.body form.form div.btn input[type="submit"]:hover {
+  color: rgb(32, 32, 32, 0.8);
+  border: 1px solid rgba(202, 198, 198, 0.8);
+  background-color: rgba(202, 198, 198, 0.2);
+  box-shadow: 0.5px 0.5px 1px rgba(202, 198, 198, 0.6);
+}
+
+div.body p {
+  margin-top: 30px;
+  text-align: center;
+  font-size: 14px;
+}
+
+div.body p a {
+  text-decoration: none;
+}
+
+div.body p a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.05);
+}
+
+footer div.footer1 {
+  border: 1px solid rgba(77, 75, 77, 0.1);
+  margin: 0px;
+}
+
+footer div.footer1 p {
+  margin: 0px 20px;
+  padding: 11px 10px;
+  color: rgba(71, 69, 69, 0.774);
+}
+
+footer div.footer2 {
+  display: flex;
+}
+
+footer div.footer2 a {
+  text-decoration: none;
+  color: rgba(71, 69, 69, 0.774);
+  display: block;
+  padding: 11px 10px;
+  font-size: 15px;
+}
+
+footer div.footer2 a:hover {
+  text-decoration: underline;
+}
+
+footer div.footer2 ul {
+  list-style: none;
+  display: flex;
+  flex-grow: 1;
+  margin: 0px;
+  padding: 0;
+}
+
+footer div.footer2 ul.one {
+  justify-content: flex-start;
+  margin-left: 20px;
+}
+
+footer div.footer2 ul.two {
+  justify-content: flex-end;
+  margin-right: 20px;
+}

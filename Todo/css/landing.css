@@ -1,0 +1,334 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    position: relative;
+  
+}
+
+/* div.main, div.task_body{
+      background-color: rgba(252, 198, 198, 0.575);
+      position: relative;
+      border: 1px solid rgba(252, 198, 198, 0.575);
+} */
+/* .bgc{
+    width: 100%;
+    height: 100vh;
+    position:fixed;
+    background-color: rgba(0, 0, 0, 0.055);
+} */
+
+header{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display:  flex;
+    align-items: center;
+}
+
+header div.newContent{
+    flex-grow: 1;
+    position: relative;
+}
+
+header div.newContent div.taskintro{
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    position: absolute;
+    left: 20px;
+    z-index: 1;
+    transition: all 1s ease-in;
+    top: 20px;
+   padding: 10px;
+   background: #fff;
+   box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+
+header div.newContent div.new #tasklink{
+    padding: 5px 10px;
+    color: rgb(5, 1, 19);
+    text-decoration: underline purple;
+    cursor: pointer;
+}
+
+header div.tabs{
+    flex-grow: 1;
+    padding: 5px 0px;
+}
+
+header div.tabs div.buttons button{
+border: 1px solid rgba(0, 0, 0, 0.1);
+padding: 5px 10px;
+}
+
+div.main{
+    position: relative;
+}
+
+
+div.main span#remove_on_create{
+    border: 1px solid rgba(0, 0, 0, 0.17);
+    position: relative;
+    width: 300px;
+    display: block;
+   text-align: center;
+   margin:250px auto;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+.default{
+    display: block;
+}
+
+a.categoryName{
+    display: block;
+}
+
+div.main div.task.content p#todo_tasks{
+display: grid;
+grid-template-columns: repeat(5,1fr);
+width: 80%;
+margin: 30px auto;
+}
+
+div.main div.task.content p#todo_tasks div.holder{
+   text-align:left;
+}
+
+div.todo_list_box{
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    width: 150px;
+    min-height: 150px;
+    padding: 10px;
+    background-color: rgba(165, 165, 165, 0.664);
+    cursor: pointer;
+}
+
+div.todo_list_box ul {
+list-style-type: none;
+}
+
+div.todo_list_box ul li{
+    padding:3px 4px;
+    display: block;
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 14px;
+}
+
+div.task_body div.task_body_head{
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    display: flex;
+    align-items: center;
+
+}
+
+div.task_body div.task_body_head span.previous{
+    display: block;
+    cursor: pointer;
+    /* flex-grow: 1; */
+}
+
+div.task_body div.task_body_head span.previous i{
+    border: 1px solid grey;
+    padding: 3px 5px 3px 10px;
+    margin-left: 10px;
+}
+
+div.task_body div.task_body_head div.title_div{
+flex-grow: 1;
+text-align: center;
+}
+div.task_body div.task_body_head div.title_div h2{
+ font-weight: lighter;
+ font-size: 18px;
+ padding: 5px 10px;
+}
+
+div.task_body div.task_body_head div.title_div i{
+    font-size: 14px;
+}
+
+div.taskView div.task_name section#tocreate{
+    margin: 20px auto;  
+    width: 500px;
+    border: 1px solid rgba(43, 43, 43, 0.233);
+}
+
+div.taskView div.task_name section#tocreate input{
+    width: 80%;
+    border: none;
+    padding:5px 10px;
+    outline: none;
+}
+ 
+div.taskView div.task_name section.createdTask div.taskholder{
+width:500px;
+margin: 20px auto;
+border: 1px solid transparent;
+border-right-color:  rgba(43, 43, 43, 0.233);
+border-left-color:  rgba(43, 43, 43, 0.233);
+border-top-color:  rgba(43, 43, 43, 0.233);
+border-bottom-color:  rgba(43, 43, 43, 0.233);
+}
+
+
+
+div.taskView div.task_name section.createdTask div.taskholder div.taskbar{
+display: flex;
+align-items: center;
+padding: 2px 5px;
+}
+
+.taskname-holder {
+    display: flex;
+    align-items: center;
+}
+
+div.taskView div.task_name section.createdTask div.taskholder div.taskbar div.iconholder{
+    flex-grow: 1;
+}
+
+div.taskView div.task_name section.createdTask div.taskholder div.taskbar div.iconholder i{
+    float: right;
+}
+
+/* div.taskView div.task_name section.createdTask div.taskholder div.taskbar div.taskname-holder{
+} */
+
+section.createdTask div.taskholder div.taskbar .isDone{
+    padding: 3px;
+}
+
+section.createdTask div.taskholder div.taskbar div.taskname-holder textarea {
+    object-fit: cover;
+    border:1px solid transparent;
+    padding: 5px 5px;
+    margin: 0px 5px;
+    border-radius: 80px;
+    resize: none;
+    max-width: 200px;
+    width: 90px;
+}
+
+section.createdTask div.taskholder div.taskbar div.taskname-holder textarea:hover{
+    border-color: rgba(0,0,0,0.3);
+    resize: both;
+}
+
+div.taskView div.task_name section.createdTask div.dropdown{
+    border: 1px solid transparent;
+    border-top-color: rgba(0, 0, 0, 0.3);
+ 
+
+}
+
+div.taskholder div.dropdown{
+    /* background-color: blue; */
+    display: flex;
+    justify-content: space-between;
+}
+
+div.taskholder div.dropdown label{
+    color: rgba(0, 0, 0, 0.5);
+    font-size: 15px;
+    text-align: left;
+padding: 5px 10px 5px 0px;
+}
+
+div.taskholder div.dropdown section.notes {
+    padding: 10px;
+}
+
+div.taskholder div.dropdown section.notes label{
+    display: block;
+
+}
+div.taskholder div.dropdown section.notes textarea{
+    display: block;
+    resize: none;
+    font-size: 17px;
+    width: 200px;
+}
+div.taskholder div.dropdown section.task_date_priority{
+    padding: 10px 10px 10px 0px;
+}
+
+
+div.taskholder div.dropdown section.task_date_priority div.date_holder label{
+    display: inline-block;
+}
+
+div.taskholder div.dropdown section.task_date_priority div.date_holder span.dateIndicator{
+   
+    min-width: 50px;
+    font-size: 15px;
+    color: rgba(0, 0, 0, 0.842);
+    float: right;
+   
+}
+
+div.taskholder div.dropdown section.task_date_priority div.date_holder div.dateContainer{
+margin-bottom: 20px;
+}
+
+div.taskholder div.dropdown section.task_date_priority div.date_holder div.dateContainer{
+    /* background-color: orange; */
+}
+
+div.taskholder div.dropdown section.task_date_priority div.date_holder div.dateContainer button{
+    padding: 6px 3px;
+    border: 1px solid transparent;
+    border-right-color: white;
+    /* background-color: orangered;
+    color: #fff; */
+}
+
+div.taskholder div.dropdown section.task_date_priority div.date_holder div.dateContainer input{
+    padding: 4px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+div.taskholder div.dropdown section.task_date_priority div.pholder{
+  
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+
+div.taskholder div.dropdown section.task_date_priority div.pholder select{
+    width: 150px;
+}
+
+div.taskholder div.dropdown section.task_date_priority div.cancelholder{
+    
+    text-align: right;
+    display: flex;
+    justify-content: flex-end;
+    margin: 40px 0px 10px 0px;
+}
+
+
+
+div.taskholder div.dropdown section.task_date_priority  button.cancel{
+    display: block;
+    padding: 5px 10px;
+}
+
+span.addTask, button.cancel, div#drop, div.checkholder, button.today, button.tomorrow, div.buttons button{
+    cursor: pointer;
+}
+
+
+
+/* style ul and dropdown */
+
+@media screen  and (max-width: 980px ){
+  div.main div.task.content p#todo_tasks{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-gap: 10px;
+        }
+}
+

@@ -1,0 +1,58 @@
+body{
+    letter-spacing: 0.1em;
+  
+}
+/* div.page{
+    border: 3px double #000; 
+} */
+
+div.logo{
+    margin: 50px auto 0px auto;
+    width: 250px;
+}
+
+ul.menu{
+    list-style: none;
+    text-align: center;
+    width: 600px;
+    border-top: 2px solid rgba(0, 0, 0,0.8);
+    border-bottom: 1px solid rgba(0, 0, 0,0.8);
+     margin:18px auto;
+     padding: 15px;
+
+}
+
+ul.menu li{
+    display: inline;
+    margin: 3px 10px;
+    /* padding: 30px; */
+    
+}
+
+.menu li a{
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 10px;
+    color: black;
+    font-size: 14px;
+}
+
+.menu li a:hover{
+    color: rgba(141, 13, 34, 0.5);
+}
+
+div.image1{
+    width: 650px;
+    margin : 20px auto;
+}
+
+div.image1 img{
+    width: 650px;
+}
+
+p{
+    text-align: center;
+    width: 550px;
+    margin: 10px auto;
+    font-size: 14px;
+}

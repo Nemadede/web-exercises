@@ -1,0 +1,169 @@
+/* base style */
+
+body {
+    background: #141514;
+    margin: 0;
+    font-family: arial;
+    color: #eee;
+}
+
+header {
+    padding: 20px;
+    text-align: center;
+}
+
+form {
+    margin: 20px;
+
+}
+
+form p {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+/* Styling Radio buttons */
+
+input[type="radio"] {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+label[for="male"],
+label[for="female"] {
+
+    margin-bottom: 10px;
+    display: inline-block;
+    padding-left: 26px;
+    background: url(./img/checks.png) no-repeat;
+    background-position: 0 -30px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input:checked+label[for="male"],
+input:checked+label[for="female"] {
+    background-position: 0 0;
+    color: #ce1010;
+}
+
+/* check boxes */
+
+input[type="checkbox"] {
+    opacity: 0;
+    width: 0;
+    margin: 0;
+}
+
+label[for="web"],
+label[for="photoshop"],
+label[for="madona"] {
+    display: inline-block;
+    margin-bottom: 10px;
+    padding-left: 26px;
+    background: url(./img/checks.png) no-repeat;
+    background-position: 0 -98px;
+    line-height: 24px;
+    cursor: pointer;
+}
+
+input:checked+label[for="web"],
+input:checked+label[for="photoshop"],
+input:checked+label[for="madona"] {
+    background-position: 0 -68px;
+    color: #ce1010;
+}
+
+/* text input style */
+
+fieldset {
+    padding: 26px;
+    margin: 20x 0px;
+    border: 3px solid #333;
+    width: 80%;
+}
+
+legend {
+    padding: 10px;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+}
+
+input[type="email"],
+input[type="telephone"] {
+    display: block;
+    margin-bottom: 20px;
+    padding: 10px 10px 10px 50px;
+    border: 0;
+    border-radius: 4px;
+    background: url(./img/inputs.png) no-repeat;
+    background-color: #222;
+    font-size: 16px;
+    color: #fff;
+    float: left;
+    clear: both;
+}
+
+input[type="email"] {
+    background-position: 7px 8px;
+}
+
+input[type="telephone"] {
+    background-position: 7px -58px;
+}
+
+/* selectboxes */
+select {
+    -webkit-appearance: none;
+    appearance: none;
+    -o-appearance: none;
+    -ms-appearance: none;
+
+    direction: block;
+    margin: 30px 0;
+    padding: 10px 50px 10px 10px;
+    background: url(./img/select.png) no-repeat 95%;
+    background-color: #222;
+    color: #fff;
+    border: 2px solid #fff;
+    width: 280px;
+}
+
+input[type="submit"] {
+    display: block;
+    background: #b61111;
+    padding: 15px;
+    color: #fff;
+    font-size: 20px;
+    letter-spacing: 0.1em;
+    border-radius: 4px;
+    border: 0;
+    box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+}
+
+/* validating input fields */
+
+input[type="email"]:valid,
+input[type="telephone"]:valid {
+    border: 2px solid #fff;
+}
+
+input[type="email"]:valid {
+    background-position: 7px -22px;
+}
+
+input[type="telephone"]:valid {
+    background-position: 7px -97px;
+}
+
+input[type="email"]:valid+.ticks,
+input[type="telephone"]:valid+.ticks {
+    background: url(./img/tick.png) center;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 10px;
+    display: block;
+    background-size: 100%;
+}

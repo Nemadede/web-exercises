@@ -1,0 +1,97 @@
+body {
+    color: #032346;
+    font-size: 14px;
+}
+
+header.first {
+    grid-area: head;
+    background-color: rgba(153, 150, 150, 0.199);
+
+}
+
+header.first p {
+    text-align: right;
+    width: 90%;
+    margin: 20px auto;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+nav.sticky {
+    grid-area: nav;
+}
+
+/* section style */
+section.section {
+    grid-area: sec1;
+    margin: 10px auto;
+    width: 90%;
+}
+
+section.section article {
+    line-height: 1.75;
+
+}
+
+section.section article h3 {
+    margin: 0px;
+}
+
+section.section article p {
+    font-weight: 300;
+    margin: 0px;
+    padding: 10px 0px;
+}
+
+section.section article.three {
+    display: grid;
+    margin: 40px 0px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-columns: minmax(100px, auto);
+    grid-template-areas: "img describe describe img2 describe2 describe2";
+    grid-column-gap: 5px;
+}
+
+div.design {
+    border: 1px solid rgba(100, 100, 104, 0.4);
+    text-align: center;
+    width: 90%;
+    margin: 0px auto;
+}
+
+section.section article.three div.img {
+    /* border: 1px solid black; */
+    grid-area: img;
+
+}
+
+section.section article.three div.img2 {
+    /* border: 1px solid black; */
+    grid-area: img2;
+
+}
+
+section.section article.three img {
+    width: 150px;
+    height: 150px;
+    margin-top: 5px;
+
+}
+
+section.section article.three div.describe {
+    grid-area: describe;
+}
+
+section.section article.three div.describe2 {
+    grid-area: describe2;
+}
+
+/* section style ends */
+
+section.second {
+    grid-area: sec2;
+}
+
+footer {
+    grid-area: foot;
+}

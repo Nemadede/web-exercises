@@ -1,0 +1,206 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+button,a{
+    cursor: pointer;
+    text-decoration: none;
+
+    transition: all 0.7s ease-in-out; 
+}
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+body{
+background-color:rgba(236, 236, 248, 0.877) ;
+/* position: relative; */
+}
+
+div.body{
+    background-color: #fff;
+    box-shadow: 13px 13px 15px rgba(0, 0, 0, 0.1);
+    width: 70%;
+    position: relative;
+    border-radius: 5px;
+    left: 50%;
+    margin: 60px 0px;
+    transform: translateX(-50%);
+}
+
+div.body div.container{
+    display: grid;
+    grid-template-columns: 1fr 2.5fr;
+ 
+}
+
+div.body div.container div.content1{
+    padding: 10px;
+    text-align: center;
+}
+
+div.content1 div.button button{
+    padding: 9px 10px;
+    width: 90%;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    color: #fff;
+    background-color: orangered;
+    font-size: 16px;
+    font-weight: 300;
+}
+
+
+div.lists, div.labels{
+    padding: 10px;
+}
+
+div.lists ul,div.labels ul{
+    padding: 15px 10px;
+}
+div.lists ul li{
+    padding: 8px 0px;
+    /* border-bottom: 1px solid rgb(179, 94, 94); */
+}
+
+div.lists ul li a{
+    color: rgba(0, 0, 0, 0.589);
+    display: block;
+}
+
+div.lists ul li a i{
+    font-size: 13px;
+    padding-right: 5px;
+}
+
+div.lists ul li span{
+float: right;
+width: 22px;
+height: 18px;
+background-color: rgb(201, 8, 114);
+font-size: 13px;
+color: #fff;
+text-align: center;
+border-radius: 3px;
+}
+
+div.labels label{
+    text-align: left;
+    display: block;
+    padding: 10px 0px;
+}
+
+div.labels ul li{
+    padding: 10px 0px;
+}
+div.labels ul li a{
+    color: #444;
+}
+
+div.labels ul li a i{
+    padding-right: 5px; 
+    font-size: 14px;
+}
+
+div.labels ul li:first-child a i{
+    color: rgb(235, 107, 186);
+}
+div.labels ul li:nth-child(2) a i{
+    color: rgb(240, 112, 112);
+}
+div.labels ul li:nth-child(3) a i{
+    
+    color: rgb(79, 154, 224);
+}
+div.labels ul li:nth-child(4) a i{
+    color: red;
+}
+div.labels ul li:nth-child(5) a i{
+    color: rgb(84, 84, 160);
+}
+
+div.content2 div.buttons{
+    display: flex;
+}
+div.content2 div.buttons section.jointbtn{
+    display: flex;
+    padding: 10px;
+}
+div.content2 div.buttons section.jointbtn button{
+    padding: 9px 10px;
+    border: none;
+}
+div.content2 div.buttons section.jointbtn button:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+div.content2 div.buttons section.jointbtn button:last-child{
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div.content2 div.buttons section.dropdownbtn{
+    padding: 10px 10px 10px 0px;
+}
+div.content2 div.buttons section.dropdownbtn button{
+    padding: 9px 10px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+
+}
+
+div.content2 div.form {
+    padding: 10px;
+}
+
+div.content2 div.form form input{
+    display: block;
+    margin: 13px 0px;
+    width: 95%;
+    padding: 10px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+div.content2 div.form form textarea{
+    display: block;
+    resize: none;
+    width: 95%;
+    padding: 10px;
+    font-size: 14px;
+    outline: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+div.content2 div.form form div.btns {
+   
+    width: 95%;
+    padding: 15px 0px;
+    text-align: right;
+}
+
+form div.btns button{
+    padding: 10px 5px;
+    margin-right: 3px;
+}
+
+form div.btns button:first-child, form div.btns button:nth-child(2){
+    border: none;
+    width: 40px;
+    border-radius: 5px;
+    background-color: rgb(132, 235, 235);
+    color: #fff;
+    font-size: 17px;
+}
+form div.btns button:last-child{
+    border: none;
+    width: 100px;
+    border-radius: 5px;
+}
+
+form div.btns button:last-child:hover{
+    background-color: rgb(156, 155, 155);
+}

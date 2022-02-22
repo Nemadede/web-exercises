@@ -1,0 +1,122 @@
+body {
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: none;
+    margin: 30px;
+    border-radius: 50%;
+}
+
+.notify {
+    background-color: purple;
+    position: relative;
+    width: 30px;
+    height: 30px;
+    animation: grow 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+
+.notify::before, .notify::after {
+    content: '';
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: none;
+    border-radius: 50%;
+    position: absolute;
+    border: 10px solid blue;
+    animation: note 1s ease-in-out infinite;
+    top: -10px;
+    left: -10px;
+}
+
+@keyframes note {
+    0% {
+        opacity: 1;
+        transform: scale(1);
+    }
+    100% {
+        opacity: 0;
+        transform: scale(1.6);
+    }
+}
+
+@keyframes grow {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(1.2);
+    }
+}
+
+.notify2 {
+    background-color: rgb(255, 22, 22);
+    position: relative;
+    width: 10px;
+    height: 10px;
+    animation: grow 1s cubic-bezier(0.175, 0.885, 0.32, 1.275) infinite;
+}
+
+.notify2::before, .notify2::after {
+    content: '';
+    display: block;
+    width: 10px;
+    height: 10px;
+    background-color: none;
+    border-radius: 50%;
+    position: absolute;
+    border: 2px solid rgb(255, 22, 22);
+    animation: note 1s ease-in-out infinite;
+    top: -2px;
+    left: -2px;
+}
+
+div.hold {
+    position: absolute;
+    left: 15px;
+    top: -30px;
+}
+
+div.icon {
+    width: 50px;
+    height: 50px;
+    background: blue;
+    position: relative;
+    /* border-top-right-radius: 25px;
+    border-bottom-right-radius: 25px;
+    border-top-left-radius: 25px; */
+    margin: 10px auto;
+}
+
+/* div.linkbutton {
+    width: 60%;
+    margin: 30px auto;
+    border: 1px solid green;
+    padding: 30px;
+    position: relative;
+}
+
+div.linkbutton a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #333;
+    padding: 20px 40px;
+    border-radius: 6px;
+    position: relative;
+}
+
+div.linkbutton a span {
+    width: 5px;
+    height: 50px;
+    background-color: #fff;
+    display: inline-block;
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    opacity: 0.8;
+} */

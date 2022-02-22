@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Todo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="./css/landing.css" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+        integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
+
+</head>
+
+<body id="container">
+    <div id="body">
+
+        <header>
+            <div class="newContent">
+                <div class="new">
+                    <span id="tasklink">New List</span>
+                </div>
+                <div class="taskintro" id="popup">
+                    <form id="MyForm" action="">
+                        <label for="taskname">Name:</label>
+                        <input type="text" name="name" id="task_name">
+                    </form>
+                </div>
+            </div>
+            <div class="tabs">
+                <div class="buttons">
+                    <button class="button" id="task">Lists</button>
+                    <button class="button" id="today">Today</button>
+                    <button class="button" id="schedule">Scheduled</button>
+                </div>
+            </div>
+        </header>
+        <div class="main">
+            <div class="task content default">
+                <span id="remove_on_create"> <i class="fa fa-frown-o"></i> No list created yet </span>
+                <p id="todo_tasks" class="categoryName"></p>
+            </div>
+            <div class="today content">This is the todo</div>
+            <div class="schedule content"> This is your schedule</div>
+        </div>
+
+    </div>
+
+
+    <div id="main_task_body" class="task_body">
+        <div class="task_body_head">
+            <span class="back previous">
+                <i class="fa fa-chevron-left" id="back_btn">Back</i>
+            </span>
+            <div class="title_div">
+                <h2 id="title"></h2>
+                <i>Created Task </i>
+            </div>
+        </div>
+        <!-- fix problem -->
+        <div class="taskView" id="TaskView">
+
+            <div class="task_name" id="input-task-name">
+                <section class="createdTask" id="taskTodo"></section>
+                <section id="tocreate" class="details_container">
+                    <span id="addTask">
+                        <i class="fa fa-plus">add</i>
+                    </span>
+                    <input type="text" name="text" id="tasknameText">
+                </section>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script src="./js/script.js"></script>
+    <!-- <script src="./js/newtask.js"></script> -->
+</body>
+
+</html>

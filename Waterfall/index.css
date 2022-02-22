@@ -1,0 +1,62 @@
+.container {
+    position: relative;
+}
+
+#btn {
+    cursor: pointer;
+}
+
+.head {
+    position: absolute;
+}
+
+#change {
+    animation: move 2.5s ease-in-out infinite;
+}
+
+#change1 {
+    animation: move 2.5s ease-in-out 0.5s infinite;
+}
+
+#change2 {
+    animation: move 2.5s ease-in-out 0.85s infinite;
+}
+
+#change3 {
+    animation: move 2.5s ease-in-out 1.25s infinite;
+}
+
+#change4 {
+    animation: move 2.5s ease-in-out 1.5s infinite;
+}
+
+#change5 {
+    animation: move 2.5s ease-in-out 1.9s infinite;
+}
+
+@keyframes move {
+    0% {
+        top: -1px;
+        opacity: 0;
+    }
+    10% {
+        top: 10px;
+        opacity: 0.8;
+    }
+    25% {
+        top: 30px;
+        opacity: 1;
+    }
+    50% {
+        top: 60px;
+        opacity: 0.8;
+    }
+    80% {
+        top: 90px;
+        opacity: 0.5;
+    }
+    100% {
+        top: 160px;
+        opacity: 0;
+    }
+}

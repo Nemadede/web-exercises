@@ -1,0 +1,251 @@
+/* body {
+    background-color: #80c5ec;
+    text-align: center;
+}
+
+img {
+    width: 200px;
+    height: 200px;
+}
+
+.wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.circle {
+    width: 100px;
+    padding: 50px 0px;
+    margin: 60px auto;
+    background-color: pink;
+    color: white;
+    border-radius: 50%;
+    cursor: pointer;
+    line-height: 0;
+    transition: background 1s, transform 1s 1s ease;
+}
+
+.circle:hover {
+    background: salmon;
+    transform: rotate(360deg);
+} */
+
+/* * {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+.sky {
+  height: 40%;
+  background: skyblue;
+  position: relative;
+}
+
+.grass {
+  height: 30%;
+  background: seagreen;
+  position: relative;
+}
+
+.road {
+  height: 30%;
+  background: dimgrey;
+  border-top: 10px solid grey;
+  border-bottom: 10px solid grey;
+  position: relative;
+}
+
+.lines {
+  border: 5px dashed white;
+  height: 0px;
+  position: absolute;
+  width: 100%;
+  top: 50%;
+} */
+
+/* Elements to animate */
+
+/* .mario {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  animation: drive 3s both infinite linear, jump 0.3s 1.2s ease-in-out;
+}
+
+.lui {
+  position: absolute;
+  top: 60px;
+  left: 0px;
+  animation-name: drive;
+  animation-duration: 5s;
+  animation-fill-mode: none;
+  animation-iteration-count: infinite;
+  animation-direction: normal;
+  animation-timing-function: linear;
+}
+
+.cloud {
+  position: absolute;
+  left: 10px;
+}
+
+.cloud:nth-child(1) {
+  width: 100px;
+  height: 80px;
+  top: 120px;
+  opacity: 0.4;
+  animation: wind 80s linear infinite reverse;
+}
+
+.cloud:nth-child(2) {
+  top: 10px;
+  animation: wind 50s linear infinite reverse;
+} */
+
+/* keyframes */
+
+/* @keyframes drive {
+  from {
+    transform: translateX(-100px);
+  }
+  to {
+    transform: translateX(1500px);
+  }
+}
+
+@keyframes wind {
+  from {
+    left: -300px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+@keyframes jump {
+  0% {
+    top: -40px;
+  }
+  50% {
+    top: -100px;
+  }
+  100% {
+    top: -40px;
+  }
+} */
+
+* {
+  color: #333;
+  font-family: sans-serif;
+  font-weight: normal;
+}
+body {
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #111;
+  position: relative;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 10px 0;
+}
+
+p {
+  margin-bottom: 40px;
+}
+
+#pop_up {
+  position: relative;
+  width: 500px;
+  top: 100px;
+  margin: 0 auto;
+  text-align: center;
+  background: #000;
+}
+
+#pop_up .container {
+  position: absolute;
+  background-color: bisque;
+  width: 100%;
+  top: 60px;
+  box-sizing: border-box;
+  padding: 30px;
+}
+/* animation for popup */
+#pop_up {
+  top: -400px;
+  transform-origin: 10px 10px;
+  animation: drop 1s ease forwards, swing 2s 3s ease-in forwards;
+}
+
+@keyframes drop {
+  0% {
+    opacity: 0;
+  }
+  70% {
+    transform: translateY(600px);
+  }
+
+  100% {
+    transform: translateY(500px);
+    opacity: 1;
+  }
+}
+
+@keyframes swing {
+  0% {
+    transform: translateY(500px) rotateZ(0deg);
+  }
+  40% {
+    transform: translateY(500px) rotateZ(90deg);
+  }
+  70% {
+    transform: translateY(500px) rotateZ(70deg);
+  }
+  100% {
+    transform: translateY(500px) rotateZ(75deg);
+  }
+}
+
+/* end */
+#pop_up input {
+  padding: 10px;
+  border: 0;
+  border-radius: 10px 0 0 10px;
+  border: 1px solid #333;
+  font-size: 18px;
+}
+
+#pop_up button {
+  padding: 10px;
+  border: 0;
+  color: #fff;
+  font-size: 18px;
+  margin-left: -5px;
+  margin-left: -5px;
+  border: 1px solid #333;
+  border-radius: 0 10px 10px 0;
+  background-color: #333;
+}
+
+.cross {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 22px;
+  height: 22px;
+  background-color: #555;
+  text-align: center;
+  font-weight: bold;
+  color: #ddd;
+  border-radius: 11px;
+}

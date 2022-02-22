@@ -1,0 +1,118 @@
+body{
+    letter-spacing: 0.1em;
+    line-height: 3;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+a{
+    text-decoration: none;
+}
+
+div.body{
+    /* border: 1px solid rgba(86, 7, 105, 0.897); */
+    width: 60%;
+    margin: 10px auto;
+}
+div.header{
+    background-color: purple;
+    box-shadow: -1px 1px 6px -1px rgba(82, 32, 82, 0.4); 
+}
+
+div.header ul{
+    /* border-top: 1px solid purple; */
+    /* border-bottom: 1px solid purple; */
+    /* border: 1px solid rgb(83, 8, 54); */
+    display: flex;
+    list-style: none;
+    margin: 0px;
+    padding: 0px;
+}
+
+div.header ul li{
+    display: flex;
+    justify-items: center;
+    justify-content: center;
+}
+
+div.header ul li a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+    padding: 4px 20px 4px 9px;
+    font-size: 20px;
+    
+    
+}
+
+div.header ul li a:hover{
+    background-color: rgba(49, 36, 165, 0.308);
+    color: rgba(3, 13, 24, 0.6);
+    /* text-decoration: underline; */
+    font-size: 20.5px;
+    text-shadow: 1px 1px 1px rgb(56, 52, 52);
+}
+
+div.article_body{
+    border: 1px solid rgba(85, 7, 105, 0.2);
+    box-shadow: 1px 1px 6px  1px rgba(114, 68, 110, 0.3);
+    margin-top: 5px;
+    padding:0px 12px;
+}
+
+div.article_body h2{
+    text-align: right;
+    margin:10px 3px 0px 3px;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: purple;
+}
+
+div.article_body p{
+    text-align: justify;
+    margin: 0px;    
+}
+div.article_body h3{
+    color: rgba(0, 0, 20, 0.5);
+}
+
+div.article_body a{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+}
+div.article_body a:hover{
+    color: rgb(145, 56, 163);
+    text-decoration: underline;
+}
+
+div.intro{
+    border: 1px solid rgba(128, 0, 128, 0.288);
+    display: flex;
+    margin-top: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 6px  1px rgba(114, 68, 110, 0.3);
+}
+div.image{
+    padding-right: 5px;
+}
+
+div.biography{
+    text-align: justify;
+}
+div.biography p {
+   margin-top: 0px;
+}
+
+div.biography h4{
+    margin: 0px;
+    color: rgba(0, 0, 0, 0.493);
+}
+strong{
+    color: rgba(37, 10, 61, 0.473);
+}
+div.biography a{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 17px;
+}
+div.biography a:hover{
+    color: rgb(145, 56, 163);
+    text-decoration: underline;
+}

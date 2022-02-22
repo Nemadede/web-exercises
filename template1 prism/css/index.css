@@ -1,0 +1,375 @@
+body {
+    margin: 0;
+    width: 100%;
+    font-family: "Times New Roman", Times, serif;
+    letter-spacing: 0.05em;
+}
+
+* {
+    outline: none;
+}
+
+a.linkbutton {
+    text-decoration: none;
+    border: 2px solid rgba(71, 70, 70, 0.2);
+    border-radius: 50px;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    color: rgba(66, 66, 66, 0.8);
+}
+
+div.mainbody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(150px, auto);
+    grid-row-gap: 20px;
+    color: rgba(66, 66, 66, 0.8);
+    grid-template-areas: "header header header header" "main main main main" "footer footer footer footer";
+}
+
+/* Header style*/
+
+header {
+    grid-area: header;
+    background: rgb(138, 11, 177);
+    background: -moz-linear-gradient(rgb(138, 11, 177), rgb(138, 43, 226));
+    padding: 40px 50px;
+}
+
+header div {
+    /* border: 1px solid blueviolet; */
+    width: 90%;
+    margin: 120px auto 20px auto;
+    /* padding: 30px; */
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(20px, auto);
+    grid-column-gap: 15px;
+    /* grid-row-gap: 5px; */
+    grid-template-areas: "headside1 headside1 headside2 headside2" "headside1 headside1 headbutton headbutton ";
+}
+
+header div p.lefthead {
+    font-weight: normal;
+    color: #fff;
+    font-size: 35px;
+    padding: 20px 10px;
+    grid-area: headside1;
+    margin: 0px;
+}
+
+header div p.righthead {
+    border-left: 2px solid rgba(144, 144, 144, 0.4);
+    font-size: 22px;
+    padding: 20px 5px 20px 30px;
+    grid-area: headside2;
+    margin: 0px;
+    color: rgba(255, 255, 255, 0.548);
+    text-align: left;
+}
+
+header div div.linkhead {
+    border-left: 2px solid rgba(144, 144, 144, 0.4);
+    margin: 0px;
+    grid-area: headbutton;
+    padding: 10px 0px 0px 30px;
+}
+
+header div a.linkbutton {
+    text-decoration: none;
+    margin: 0px;
+    padding: 15px;
+    width: 150px;
+    text-align: center;
+    font-size: 15px;
+    color: rgb(255, 255, 255);
+    border: 1px solid rgba(11, 197, 135, 0.9);
+    background-color: rgba(11, 197, 135, 0.9);
+}
+
+header div a.linkbutton:hover {
+    background-color: rgb(10, 243, 165);
+    color: #fff;
+}
+
+/*end header style*/
+
+/*Main body style*/
+
+main {
+    grid-area: main;
+    /* border: 1px solid purple; */
+}
+
+main section.first {
+    /* border: 1px solid rgb(158, 22, 129); */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: minmax(50px, auto);
+    margin: 50px auto;
+    grid-column-gap: 20px;
+    width: 85%;
+    line-height: 2;
+    text-align: left;
+    color: rgba(66, 66, 66, 0.8);
+}
+
+main section.first h1 {
+    margin: 0;
+    padding: 0px 10px;
+}
+
+main section.first p {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    margin: 0px;
+    padding: 5px 10px;
+}
+
+main section.first div {
+    grid-column: 1/1;
+    grid-row: 3/4;
+    padding: 20px 0px 20px 10px;
+}
+
+main section.first div a.linkbutton {
+    padding: 10px;
+    width: 150px;
+    position: relative;
+    margin: 0px;
+    text-align: center;
+    display: block;
+    /* background: rgb(197, 130, 130); */
+}
+
+main section.first div a.linkbutton:hover {
+    background-color: rgba(182, 180, 180, 0.1);
+}
+
+main section.first ul {
+    grid-column: 2/3;
+    grid-row: 1/4;
+    margin: 0;
+    border-left: 2px solid rgba(144, 144, 144, 0.2);
+    line-height: 3;
+    padding-inline-start: 60px;
+}
+
+/* end first section */
+
+hr {
+    border: 1px solid rgba(144, 144, 144, 0.2);
+}
+
+/* second section */
+
+main section.second {
+    /* border: 1px solid blueviolet; */
+    width: 85%;
+    margin: 10px auto;
+}
+
+main section.second div.display {
+    border-bottom: 2px solid rgba(144, 144, 144, 0.2);
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-auto-columns: minmax(150px, auto);
+    grid-auto-rows: minmax(30px, auto);
+    grid-column-gap: 10px;
+}
+
+main section.second div.display img {
+    margin-top: 40px;
+    width: 480px;
+}
+
+main section.second div.display aside {
+    grid-column: 2/4;
+    /* justify-self: center; */
+    align-self: center;
+    padding-left: 30px;
+}
+
+main section.second div.display aside a {
+    display: block;
+    width: 100px;
+    text-align: center;
+    padding: 10px;
+}
+
+main section.second div.display aside a:hover {
+    background-color: rgba(182, 180, 180, 0.1);
+}
+
+main section.second div.display aside p {
+    line-height: 3;
+}
+
+/* end second section */
+
+/* start link */
+
+main div#link {
+    /* border: 1px solid blueviolet; */
+    text-align: center;
+    padding: 30px 0px;
+    width: 85%;
+    margin: 10px auto;
+}
+
+main div#link a.linkbutton {
+    /* border: 1px solid blueviolet; */
+    padding: 13px;
+    margin: 0px auto 100px auto;
+    display: block;
+    width: 200px;
+}
+
+main div#link a.linkbutton:hover {
+    background-color: rgba(182, 180, 180, 0.1);
+}
+
+/* end link */
+
+main section.third {
+    width: 85%;
+    margin: 10px auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-row-gap: 10px;
+}
+
+main section.third div.info1 {
+    margin-top: 0;
+    grid-column: 1/3;
+    grid-row: 1/4;
+    border-right: 2px solid rgba(144, 144, 144, 0.2);
+    padding-right: 50px;
+}
+
+main section.third div.info2 {
+    margin-top: 0;
+    grid-column: 3/5;
+    grid-row: 1/3;
+}
+
+main section.third div.info1 h2 {
+    margin-top: 0px;
+    padding-bottom: 10px;
+}
+
+main section.third div.info1 p {
+    line-height: 1.75;
+    margin: 30px 0px 30px 0px;
+    /* border: 1px solid blueviolet; */
+}
+
+main section.third form {
+    display: block;
+}
+
+main section.third form input[type="text"] {
+    margin-bottom: 15px;
+    width: 45%;
+    display: inline-block;
+    height: 25px;
+    padding: 10px 0px 10px 10px;
+    border: 1px solid rgba(144, 144, 144, 0.2);
+    font-size: 15px;
+}
+
+main section.third form input[type="text"]:focus {
+    border: 2px solid rgba(2, 133, 72, 0.9);
+}
+
+main section.third form input[type="text"]:first-child {
+    margin-right: 15px;
+}
+
+main section.third form textarea {
+    display: block;
+    width: 95%;
+    height: 130px;
+    margin: 10px 0px 10px 0px;
+    padding: 10px 10px 10px 10px;
+    border: 1px solid rgba(144, 144, 144, 0.2);
+}
+
+main section.third form textarea:focus {
+    border: 2px solid rgba(2, 133, 72, 0.9);
+}
+
+main section.third form input[type="submit"] {
+    display: block;
+    border: 2px solid rgba(71, 70, 70, 0.2);
+    border-radius: 50px;
+    padding: 15px;
+    width: 190px;
+    margin: 30px 0px 20px 0px;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+    background-color: #fff;
+    color: rgba(66, 66, 66, 0.8);
+}
+
+main section.third form input[type="submit"]:hover {
+    background-color: rgba(182, 180, 180, 0.1);
+}
+
+main section.third div.info2 ul {
+    padding-inline-start: 60px;
+    margin: 0px 100px 0px 10px;
+    /* list-style: none; */
+    text-align: left;
+}
+
+main section.third div.info2 ul li {
+    margin-bottom: 10px;
+    padding: 0px 10px 10px 5px;
+}
+
+main section.third div.info2 ul li em {
+    font-style: normal;
+    display: block;
+}
+
+main section.third div.info2 ul li a {
+    display: block;
+    padding: 5px;
+    text-decoration: none;
+    color: rgba(66, 66, 66, 0.8);
+}
+
+main section.third div.info2 ul li a:hover {
+    color: rgba(0, 255, 170, 0.9);
+}
+
+/* main section.third div.info2 ul li img {
+    height: 14px;
+    width: 14px;
+    margin-right: 10px;
+} */
+
+/*end main body style*/
+
+/*Footer style*/
+
+footer {
+    border-top: 2px solid rgba(144, 144, 144, 0.4);
+    grid-area: footer;
+    margin-top: 50px;
+    align-self: center;
+}
+
+footer p {
+    color: rgba(66, 66, 66, 0.5);
+    font-size: 15px;
+    display: block;
+    /* border: 1px solid purple; */
+    text-align: center;
+    margin-top: 30px;
+    padding: 40px;
+}

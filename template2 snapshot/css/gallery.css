@@ -1,0 +1,107 @@
+header.first {
+    grid-area: head;
+    background-color: rgba(153, 150, 150, 0.199);
+
+}
+
+header.first p {
+    text-align: right;
+    width: 90%;
+    margin: 20px auto;
+    font-weight: normal;
+    font-size: 14px;
+}
+
+nav.sticky {
+    grid-area: nav;
+}
+
+/* sections */
+div.sections {
+    grid-area: sec1;
+    width: 90%;
+    margin: 20px auto;
+
+}
+
+div.sections section.nav {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+div.sections section.nav h2 {
+    font-weight: normal;
+    font-size: 25px;
+}
+
+div.sections section.nav ul {
+    list-style: none;
+    display: grid;
+    grid-template-columns: .5fr repeat(3, 1fr);
+    align-self: end;
+    justify-self: end;
+
+
+}
+
+div.sections section.nav ul li {
+    /* border: 1px solid purple; */
+    align-self: center;
+    margin: 0px 3px;
+    width: 100px;
+
+    /* grid-auto-columns: 100px; */
+}
+
+
+div.sections section.nav ul li a {
+    padding: 12px;
+    display: block;
+    width: 70px;
+    margin: 0px auto;
+    color: #fff;
+    background: #19b5fe;
+}
+
+div.sections section.nav ul li a:hover {
+    background-color: #0a8bc7;
+    /* border-color: #0a8bc7; */
+}
+
+div.sections section.nav ul li a:active {
+    background-color: #054766;
+}
+
+div.sections section.nav ul li:first-child a {
+    width: 30px;
+    margin-right: 5px;
+
+}
+
+
+
+div.sections section.first1 div.thumb {
+    margin: 20px auto;
+}
+
+div.sections section.first1 div.thumb img {
+    width: 290px;
+    width: 290px;
+}
+
+div.sections section.first1 div.thumb {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+
+/* end section style */
+
+section.second {
+    grid-area: sec2;
+}
+
+footer {
+    grid-area: foot;
+    text-align: center;
+}
